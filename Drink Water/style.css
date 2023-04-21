@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    height: 100vh;
+    overflow: hidden;
+    color:white;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.cup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    margin: 10px;
+    border: 2px solid blue;
+}
+.goal-cups{
+    height: 400px;
+    width: 200px;
+}
+
+#goal-cup-uncomplated{
+    height: 100%;
+    background-color: white;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: height .4s linear;
+}
+#goal-cup-complated{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    height: 0;
+    background-color: rgb(94, 177, 204);
+    transition: height .4s linear;
+}
+
+.drank-cups{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cup-drank{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+.cup-drank.active{
+    background-color:rgb(94, 177, 204);
+    color: white;
+}
