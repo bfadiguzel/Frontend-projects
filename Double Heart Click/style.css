@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+    background-color: darkslateblue;
+}
+
+#image {
+    padding: 1rem;
+    max-width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+  
+}
+
+i {
+    position: absolute;
+    color: red;
+    font-size: 50px;
+    animation: grow .6s linear;
+    transform: translate(-50%,-50%) scale(0);
+}
+
+
+@keyframes grow{
+    to{
+        transform: translate(-50%,-50%) scale(10);
+        opacity: 0;
+    }
+}
