@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #b387c4;
+}
+
+.phone{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 380px;
+    height: 500px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+.phone img{
+    height: 0%;
+    width: 100%;
+    opacity:0;
+    transition: opacity .3s ease;
+}
+
+.phone img.show{
+    opacity: 1;
+    height: 90%;
+}
+
+nav{
+    height:11%;
+    background-color: #fff;
+    
+}
+nav ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: .5rem;
+    text-align: center;
+    font-size: .9rem;
+}
+nav ul li{
+    margin: .1rem .5rem;
+    cursor: pointer;
+}
+
+nav ul li.active{
+    color: #734485;
+}
